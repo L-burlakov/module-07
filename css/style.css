@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+@font-face {
+  font-family: 'Wisdom';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Wisdom'), local('Comic Sans'),
+       url('../fonts/Wisdom.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Wisdom.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* caladea-italic - latin */
+@font-face {
+  font-family: 'Caladea';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Caladea Italic'), local('Caladea-Italic'),
+       url('../fonts/caladea-v1-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/caladea-v1-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+.great_box {
+  margin: 0 auto;
+  width: 940px;
+  margin-bottom: 122px;
+}
+
+.navigation_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navigation {
+  display: flex;
+  width: 484px;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navigation_element a{
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 2.929;
+  font-weight: normal;
+}
+
+.navigation_element a:hover {
+  color: #fed136;
+}
+
+.logo {
+  font-family: 'Wisdom', sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  color: #fed136;
+  line-height: 1.577;
+  text-decoration: none;
+}
+
+.service_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lead {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.under_lead {
+  font-size: 16px;
+  font-family: 'Caladea', serif;
+  font-style: italic;
+  line-height: 1.2;
+  color: #777777;
+  margin-bottom: 76px;
+}
+
+.services_text {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.service_text_unit {
+  width: 274px;
+}
+ 
+.service_text_unit:not(:last-of-type) {
+  margin-right: 58px;
+} 
+
+.service_name::before {
+  content:" ";
+  width: 72px;
+  height: 71px;
+  display: flex;
+  border-style: solid;
+  border-width: 3px;
+  border-color:  #fed136;
+  border-radius: 50%;
+  top: 0;
+  left: 0%;
+  transform: translateX(125%);
+  margin-bottom: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service_name {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.name1::before {
+  background-image: url(../img/Icon-Basket1.png);
+}
+.name2::before {
+  background-image: url(../img/Icon-Laptop2.png);
+}
+.name3::before {
+  background-image: url(../img/3.png);
+}
+
+.service_subscribe {
+  font-size: 14px;
+  font-family: "Roboto Slab", sans-serif;
+  color: #777777;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.container_with_map {
+  background-color:#222222;
+  background-image: url(../img/map.png);
+  background-position: right;
+}
+
+.contact_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 108px;
+}
+.contact_form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs_inside {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: black;
+}
+
+.inputs_list {
+margin-right: 30px;
+  list-style: none;
+}
+
+.input_please {
+  display: block;
+  height: 52px;
+  width: 456px;
+  margin-bottom: 28px;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.textinput{
+  width: 456px;
+  height: 212px;
+  resize: none;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.input_please::placeholder,
+.textinput::placeholder {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contact_box h2{
+  color: #ffffff;
+}
+
+.message_btn {
+  margin-bottom: 114px;
+  width: 240px;
+  height: 66px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.input_please:required:focus:valid:not(:placeholder-shown),
+.textinput:focus:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.input_please:required:focus:invalid:not(:placeholder-shown),
+.textinput:required:focus:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
