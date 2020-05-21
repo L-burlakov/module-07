@@ -54,7 +54,7 @@
 .great_box {
   margin: 0 auto;
   width: 940px;
-  margin-bottom: 122px;
+  padding-bottom: 122px;
 }
 
 .navigation_container {
@@ -214,6 +214,7 @@ margin-right: 30px;
   margin-bottom: 28px;
   border-style: solid;
   border-width: 3px;
+  padding-left: 5px;
 }
 
 .textinput{
